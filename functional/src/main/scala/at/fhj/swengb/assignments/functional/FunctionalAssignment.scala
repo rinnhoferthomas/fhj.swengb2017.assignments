@@ -34,12 +34,21 @@ object FunctionalAssignment {
   //
   /**
     *
-    * @param as
-    * @param b
-    * @param fn
-    * @tparam A
-    * @tparam B
-    * @return
+    * @param as -> list oder seq (da vom Typ Seq, Seq ist der Obertyp von List)
+    * @param b -> acc, da dieser Wert als Accumulator dient
+    * @param fn -> func, da eine Funktion die Inhalte der Liste bzw der Sequenz sowie den Accumulator als Parameter verwendet
+    * @tparam A -> würde es bei A belassen, parameter vom Typ A
+    * @tparam B -> würde es bei B belassen, parameter vom Typ B
+    * @return ergebnis welches zurückgegeben werden soll
+    *         Funktion op nimmt den Accumulator (b) als Startwert, und wendet eine gewünschte Funktion (fn)
+    *         mit 2 Parametern, nämlich den Accumulator sowie eine Sequenz (wie eine Liste), an.
+    *
+    *         Beim darauffolgenden Beispiel wird etwa eine Seq mit Int Zahlen der Reihe nach zum derzeitigen Accumulator
+    *         hinzugerechnet. So wird etwa der Startwert auf 0 gesetzt, und pro Schritt immer um die nächste Zahl der Seq erhöht
+    *
+    *         Neue Namenskonvention viel besser, da klar wird, was dahinter steckt. So ist etwa klar das es sich bei
+    *         fn um eine Funktion handelt, sowie bei b um einen Accumulator. Dar Name as für die Seq war auch nicht wirklich aussagekräftig.
+    *         Einzig A und B waren in Ordnung, da hier klar wird das es sich hierbei um zwei unterschiedliche Parameter mit jeweils dazugehörigen Typ handelt.
     */
   def op[A, B](as: Seq[A], b: B)(fn: (B, A) => B): B = as.foldLeft(b)(fn)
 
