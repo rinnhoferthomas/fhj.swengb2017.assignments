@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.GridPane?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.control.TextField?>
-<GridPane id="calculator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-          prefHeight="500.0" prefWidth="500.0" styleClass="gridpane" xmlns="http://javafx.com/javafx/null"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.fhj.swengb.apps.calculator.CalculatorFxController">
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="422.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.fhj.swengb.apps.calculator.CalculatorFxController">
     <children>
-        <Button mnemonicParsing="false" onAction="#sgn" prefHeight="100.0" prefWidth="100.0" styleClass="grey"
-                text="+/-" GridPane.columnIndex="2" GridPane.rowIndex="2">
-
-        </Button>
-
-        <TextField fx:id="numberTextField" text="123" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <HBox layoutX="43.0" layoutY="343.0" prefHeight="80.0" prefWidth="338.0" spacing="12.0" style="-fx-background-color: black;">
+            <children>
+                <Button mnemonicParsing="false" onAction="#btn4Clk" prefHeight="101.0" prefWidth="108.0" text="4" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn5Clk" prefHeight="101.0" prefWidth="108.0" text="5" />
+                <Button layoutX="118.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn6Clk" prefHeight="101.0" prefWidth="108.0" text="6" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDivClk" prefHeight="101.0" prefWidth="108.0" style="-fx-background-color: orange;" text="/">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutX="43.0" layoutY="434.0" prefHeight="80.0" prefWidth="338.0" spacing="12.0" style="-fx-background-color: black;">
+            <children>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn1Clk" prefHeight="101.0" prefWidth="108.0" text="1" />
+                <Button layoutX="118.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn2Clk" prefHeight="101.0" prefWidth="108.0" text="2" />
+                <Button layoutX="226.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn3Clk" prefHeight="101.0" prefWidth="108.0" text="3" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnMinClk" prefHeight="101.0" prefWidth="108.0" style="-fx-background-color: orange;" text="-">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutX="43.0" layoutY="525.0" prefHeight="80.0" prefWidth="338.0" spacing="12.0" style="-fx-background-color: black;">
+            <children>
+                <Button mnemonicParsing="false" onAction="#btn0Clk" prefHeight="101.0" prefWidth="108.0" text="0" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPtnClk" prefHeight="101.0" prefWidth="108.0" text="." />
+                <Button layoutX="118.0" layoutY="10.0" mnemonicParsing="false" onAction="#sgn" prefHeight="101.0" prefWidth="108.0" text="=" />
+                <Button layoutX="226.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPlsClk" prefHeight="101.0" prefWidth="108.0" style="-fx-background-color: orange;" text="+">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutX="43.0" layoutY="255.0" prefHeight="80.0" prefWidth="338.0" spacing="12.0" style="-fx-background-color: black;">
+            <children>
+                <Button mnemonicParsing="false" onAction="#btn7Clk" prefHeight="101.0" prefWidth="108.0" text="7" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn8Clk" prefHeight="101.0" prefWidth="108.0" text="8" />
+                <Button layoutX="118.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn9Clk" prefHeight="101.0" prefWidth="108.0" text="9" />
+                <Button layoutX="226.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnMulClk" prefHeight="101.0" prefWidth="108.0" text="*">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutX="43.0" layoutY="165.0" prefHeight="80.0" prefWidth="338.0" spacing="12.0" style="-fx-background-color: black;">
+            <children>
+                <Button layoutX="0.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnCClk" prefHeight="101.0" prefWidth="169.0" text="C" />
+                <Button layoutX="226.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnSgnClk" prefHeight="101.0" prefWidth="169.0" text="+/-">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children></HBox>
+        <TextField fx:id="numberTextField" alignment="CENTER_RIGHT" layoutX="39.0" layoutY="30.0" prefHeight="100.0" prefWidth="345.0">
+            <font>
+                <Font size="47.0" />
+            </font>
+        </TextField>
     </children>
-
-</GridPane>
+</AnchorPane>

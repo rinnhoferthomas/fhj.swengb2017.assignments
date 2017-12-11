@@ -7,16 +7,28 @@
 | Hours
 | Description
 
-| 29.11.17
-| 1
-| Review of this and that
-
-| 30.11.17
-| 5
-| implemented css
-
-| 11.07.17
+| 2.12.17
 | 2
-| fixed bugs
+| starting with GUI
+
+| 3.12.17
+| 2
+| working on GUI
+
+| 5.12.17
+| 1-2
+| finishing GUI
+
+| 7.12.17
+| 2
+| RPNSpec
+
+| 8.12.17
+| 2
+| RPNspec, finishing, solving last problem
+
+| 10.12.17
+| 15
+| working on calculator tests gui already there.
 
 |===
