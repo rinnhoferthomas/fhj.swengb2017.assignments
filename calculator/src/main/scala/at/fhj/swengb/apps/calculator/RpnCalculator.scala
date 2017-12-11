@@ -32,7 +32,7 @@ case class RpnCalculator(stack: List[Op] = Nil) {
     * @param op
     * @return
     */
-  def push(op: Op): Try[RpnCalculator] = ???
+  def push(op: Op): Try[RpnCalculator] = Try(RpnCalculator())
 
   /**
     * Pushes val's on the stack.
@@ -63,5 +63,5 @@ case class RpnCalculator(stack: List[Op] = Nil) {
     *
     * @return
     */
-  def size: Int = ???
+  def size: Int = stack.length
 }
