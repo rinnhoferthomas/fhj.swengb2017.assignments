@@ -6,6 +6,7 @@ option java_package         = "at.fhj.swengb.apps.battleship";
 option java_outer_classname = "BattleShipProtobuf";
 
 
+
 message BattleShipGame {
     Field field = 1;
 }
@@ -33,6 +34,8 @@ message Cell {
     Pos pos = 1;
     bool shot = 2;
 }
+
+
 
 message Pos {
     int32 x = 1;

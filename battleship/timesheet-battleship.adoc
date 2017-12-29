@@ -1,7 +1,8 @@
 == Time expenditure: battleship assignment
-
+== RINNHOFE15 & WALLNERB15- in cooperation with Jakob Arneitz
 [cols="1,1,1, 1,4", options="header"]
 .Time expenditure
+
 |===
 | Student
 | Date
@@ -9,22 +10,70 @@
 | Actual Hours
 | Description
 
-| Arneitzj15
-| 29.11.17
-| 2
-| 1
-| Review of this and that
+| wallnerb15 & rinnhofe15
+| 21.12.2017
+| 30 minutes
+| 1 1/2 h
+| Review of the files
 
-| Arneitzj15
-| 30.11.17
-| 1
-| 5
-| implemented css
+| wallnerb15 & rinnhofe15
+| 21.12.2017
+| 20 minutes
+| 8 minutes
+| implemented BattleShip.proto
 
-| Heiderst16
-| 11.07.17
-| 2
-| 2
-| fixed bugs
 
+| wallnerb15 & rinnhofe15
+| 22.12.2017
+| 5 minutes
+| 15 minutes
+| implemented necessary scala worksheet + solving problems + refreshing sbt
+
+| wallnerb15 & rinnhofe15
+| 22.12.2017
+| 1 h
+| 1 1/2 h
+| Code implementation to BattleShipGameGen
+
+| wallnerb15 & rinnhofe15
+| 22.12.2017
+| 1 h
+| 1 h
+| fixing problems again - BattleShipDetails couldn't find "Battleship" from BattleShip.sc - fixed it with creativity
+
+| wallnerb15 & rinnhofe15
+| 22.12.2017
+| 1 h
+| 1 h
+| found out, that there already exists a .proto already - made a new one and worked in the wrong folder - fixed problems
+
+| wallnerb15 & rinnhofe15
+| 27.12.2017
+| 30 min
+| 10 min
+| Found out, that we are stupid idiots ;-) - after sbt refresh we didn't have a look at the scala folder - so the first two work days "woan fian oarsch" ;-)
+
+| wallnerb15 & rinnhofe15
+| 22.12.2017
+| 10 min
+| 10 min
+| But it was very helpful - now we are more into protobuf than ever before ;-)
+
+| wallnerb15 & rinnhofe15
+| 27.12.2017
+| 4 h
+| 10 h
+| working on .proto file and the concept behind it + first try's to write the code behind the load & save buttons (with Jakob together)
+
+| wallnerb15 & rinnhofe15
+| 28.12.2017
+| 4 h
+| 6 h
+| finished load and save implementation, working on the slider, fixing some problems (again together with Jakob)
+
+| wallnerb15 & rinnhofe15
+| 29.12.2017
+| 5 h
+| 5 h
+| working on the slider and the css file, implementing some tests (or at least we tried it :D )
 |===
